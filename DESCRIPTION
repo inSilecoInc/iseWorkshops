@@ -25,6 +25,7 @@ Imports:
     icons,
     knitr,
     kableExtra,
+    htmltools,
     rmarkdown,
     utils,
     xaringan,
