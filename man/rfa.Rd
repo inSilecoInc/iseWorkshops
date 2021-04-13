@@ -60,7 +60,7 @@ lc()
 \arguments{
 \item{...}{further argument passed to \code{\link[icons:fontawesome]{icons::fontawesome()}}.}
 
-\item{help}{if \code{TRUE} then a table with shortcut (\code{fun}) names and corresponding icons is dsiplayed.}
+\item{help}{if \code{TRUE} then a table with shortcut names (\code{fun}) and corresponding icons is displayed.}
 }
 \description{
 Shortcuts for fontawesome icons.
