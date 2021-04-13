@@ -21,7 +21,7 @@
 \alias{lc}
 \title{Shortcuts for fontawesome icons.}
 \usage{
-rfa(..., help = FALSE)
+rfa(..., fill = "currentColor", help = FALSE)
 
 gh()
 
@@ -59,6 +59,8 @@ lc()
 }
 \arguments{
 \item{...}{further argument passed to \code{\link[icons:fontawesome]{icons::fontawesome()}}.}
+
+\item{fill}{color to fill the icon with see \code{\link[icons:icon_style]{icons::icon_style()}}.}
 
 \item{help}{if \code{TRUE} then a table with shortcut names (\code{fun}) and corresponding icons is displayed.}
 }

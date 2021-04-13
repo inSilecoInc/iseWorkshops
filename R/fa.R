@@ -1,12 +1,13 @@
 #' Shortcuts for fontawesome icons.
 #'
 #' @param ... further argument passed to [icons::fontawesome()].
+#' @param fill color to fill the icon with see [icons::icon_style()].
 #' @param help if `TRUE` then a table with shortcut names (`fun`) and corresponding icons is displayed.
 #'
 #' @export 
 
 
-rfa <- function(..., help = FALSE) {
+rfa <- function(..., fill = "currentColor", help = FALSE) {
   if (help) {
     out <- data.frame(
       fun = c(
@@ -49,11 +50,7 @@ rfa <- function(..., help = FALSE) {
     )
     kkble(out[order(out$fun), ])
   } else {
-    if ("style" %in% names(list(...))) {
-      icons::fontawesome(...)
-    } else {
-      icons::fontawesome(..., style = "height:1em;fill:currentColor;position:relative;display:inline-block;top:.1em;")
-    }
+    icon_style(fontawesome(...), fill = fill)
   }
 }
 

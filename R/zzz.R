@@ -4,6 +4,7 @@
 #' @importFrom glue glue
 #' @importFrom curl curl_download
 #' @importFrom utils unzip
+#' @importFrom icons fontawesome icon_style
 
 NULL 
 
