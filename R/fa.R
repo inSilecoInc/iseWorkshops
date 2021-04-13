@@ -6,7 +6,6 @@
 #'
 #' @export 
 
-
 rfa <- function(..., fill = "currentColor", help = FALSE) {
   if (help) {
     out <- data.frame(
@@ -49,6 +48,7 @@ rfa <- function(..., fill = "currentColor", help = FALSE) {
       "laptop-code")
     )
     kkble(out[order(out$fun), ])
+    invisible(out[order(out$fun), ])
   } else {
     icon_style(fontawesome(...), fill = fill)
   }
