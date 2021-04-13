@@ -16,13 +16,15 @@ remotes::install_github("inSilecoInc/iseWorkshops")
 ```R
 library(iseWorkshops)
 rfa(help = TRUE) 
+wksh_dl() 
+wksh_dl(1) 
 ```
 
 
 ## TODO 
 
-- `dl_workshop()`
-- `update_temple()`
+- Allows the user to cherry pick what shouls be dl in `wksh_dl()`.
+- `update_template()`.
 
 ## Code of Conduct
 

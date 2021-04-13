@@ -47,7 +47,7 @@ rfa <- function(..., help = FALSE) {
       "eye",
       "laptop-code")
     )
-    knitr::kable(out[order(out$fun), ], format = "simple", row.names = FALSE)
+    kkble(out[order(out$fun), ])
   } else {
     icons::fontawesome(...)
   }

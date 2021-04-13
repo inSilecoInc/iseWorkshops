@@ -19,12 +19,14 @@ Imports:
     cli,
     countdown,
     crayon,
+    curl,
     emo,
     glue,
     icons,
     knitr,
     kableExtra,
     rmarkdown,
+    utils,
     xaringan,
     xaringanExtra
 Remotes:
