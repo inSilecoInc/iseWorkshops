@@ -1,17 +1,28 @@
-# R_package_skeleton
-[![R-CMD-check](https://github.com/inSilecoInc/R_package_skeleton/workflows/R-CMD-check/badge.svg)](https://github.com/inSilecoInc/R_package_skeleton/actions?query=workflow%3AR-CMD-check)
-
-This is our R package template repository. Note that this template was designed
-to be used with the [`devtools`](https://devtools.r-lib.org/) package (and
-[`usethis`](https://github.com/r-lib/usethis)). Therefore, the [R Packages](https://r-pkgs.org) represents a valuable reference to work with this package skeleton. 
+# iseWorkshops
+[![R-CMD-check](https://github.com/inSilecoInc/iseWorkshops/workflows/R-CMD-check/badge.svg)](https://github.com/inSilecoInc/iseWorkshops/actions?query=workflow%3AR-CMD-check)
+[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 
 
-# Resources  
+## Installation 
 
-- https://r-pkgs.org
-- https://style.tidyverse.org/
-- https://kevcaz.github.io/aboutRPackages/#1
-- https://ropensci.org/blog/2019/01/14/conduct/
+```{R}
+install.packages("remotes")
+remotes::install_github("inSilecoInc/iseWorkshops")
+```
+
+
+## Overview 
+
+```R
+library(iseWorkshops)
+rfa(help = TRUE) 
+```
+
+
+## TODO 
+
+- `dl_workshop()`
+- `update_temple()`
 
 ## Code of Conduct
 
