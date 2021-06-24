@@ -19,6 +19,7 @@
 \alias{cb}
 \alias{ey}
 \alias{lc}
+\alias{wk}
 \title{Shortcuts for fontawesome icons.}
 \usage{
 rfa(..., fill = "currentColor", help = FALSE)
@@ -56,6 +57,8 @@ cb()
 ey()
 
 lc()
+
+wk()
 }
 \arguments{
 \item{...}{further argument passed to \code{\link[icons:fontawesome]{icons::fontawesome()}}.}

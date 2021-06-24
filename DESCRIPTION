@@ -21,6 +21,7 @@ Imports:
     crayon,
     curl,
     emo,
+    fs,
     glue,
     icons,
     knitr,
@@ -28,8 +29,9 @@ Imports:
     htmltools,
     rmarkdown,
     utils,
+    whisker,
     xaringan,
-    xaringanExtra
+    xaringanExtra,
 Remotes:
     gadenbuie/countdown,
     gadenbuie/xaringanExtra,

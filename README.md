@@ -20,10 +20,16 @@ wksh_dl()
 wksh_dl(1) 
 ```
 
+### Create an empty presentation
+
+```R
+new_pres()
+```
+
 
 ## TODO 
 
-- Allows the user to cherry pick what shouls be dl in `wksh_dl()`.
+- Allows the user to cherry pick what should be dl in `wksh_dl()`.
 - `update_template()`.
 
 ## Code of Conduct

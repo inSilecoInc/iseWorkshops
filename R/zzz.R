@@ -1,10 +1,13 @@
 # Internals
 #' @importFrom crayon blue red green yellow
 #' @importFrom cli style_bold style_underline
-#' @importFrom glue glue
 #' @importFrom curl curl_download
-#' @importFrom utils unzip
+#' @importFrom fs path path_package path_real file_exists dir_copy dir_delete file_copy file_move path_rel
+#' @importFrom glue glue
 #' @importFrom icons fontawesome icon_style
+#' @importFrom rmarkdown render
+#' @importFrom utils unzip browseURL
+#' @importFrom whisker whisker.render
 
 NULL 
 
@@ -53,4 +56,5 @@ kkble <- function(tbl, ...)  {
   knitr::kable(tbl, format = "simple", row.names = FALSE, ...)
 }
 
-
+# https://stackoverflow.com/questions/10969015/how-to-open-a-local-html-file-from-r-in-an-operating-system-independent-way
+openHTML <- function(x) browseURL(paste0('file://', file.path(getwd(), x)))

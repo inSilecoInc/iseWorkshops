@@ -26,7 +26,8 @@ rfa <- function(..., fill = "currentColor", help = FALSE) {
         "tr()",
         "cb()",
         "ey()",
-        "lc()"
+        "lc()",
+        "wk()"
       ),
       icons = c(
       "github",
@@ -45,7 +46,8 @@ rfa <- function(..., fill = "currentColor", help = FALSE) {
       "exclamation-triangle",
       "clipboard",
       "eye",
-      "laptop-code")
+      "laptop-code", 
+      "wikipedia-w")
     )
     kkble(out[order(out$fun), ])
     invisible(out[order(out$fun), ])
@@ -125,3 +127,4 @@ lc <- function() rfa("laptop-code")
 
 #' @export
 #' @rdname rfa
+wk <- function() rfa("wikipedia-w")
