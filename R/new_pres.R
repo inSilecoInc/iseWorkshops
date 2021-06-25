@@ -1,4 +1,14 @@
-new_pres <- function(title = "Cool title", date = Sys.Date(), author = "inSileco Tea", overwrite = FALSE) {
+#' Shortcuts for interactive functions.
+#'
+#' @param title presentation title. 
+#' @param date presentation date.
+#' @param author author name.
+#' @param pres_name name of the folder that includes the presentation.  
+#' @param overwrite a logical. Overwrite files if they exist (see [fs::dir_copy()]).
+#'
+#' @export 
+
+new_pres <- function(title = "Cool title", date = Sys.Date(), author = "inSileco Tea", pres_name = "newpres", overwrite = FALSE) {
   dir_copy(
     path_package(package = "iseWorkshops", "templates/newpres"), ".", 
     overwrite = overwrite
@@ -17,5 +27,6 @@ new_pres <- function(title = "Cool title", date = Sys.Date(), author = "inSileco
   #
   msgInfo("Rendering presentation and opening it")
   openHTML("newpres/index.html")
-  NULL
+  
+  invisible(NULL)
 }
