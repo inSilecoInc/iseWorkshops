@@ -16,6 +16,32 @@ remotes::install_github("inSilecoInc/iseWorkshops")
 ```R
 library(iseWorkshops)
 rfa(help = TRUE) 
+ℹ icons available are
+
+
+fun    icons                
+-----  ---------------------
+ar()   arrow-right          
+bk()   book                 
+cb()   clipboard            
+cg()   cogs                 
+ch()   check                
+ck()   clock                
+db()   database             
+ey()   eye                  
+fd()   folder               
+fl()   file                 
+gh()   github               
+lc()   laptop-code          
+lk()   link                 
+nf()   info-circle          
+pd()   file-pdf             
+rp()   r-project            
+tr()   exclamation-triangle 
+wk()   wikipedia-w  
+```
+
+```R
 wksh_dl() 
 wksh_dl(1) 
 ```

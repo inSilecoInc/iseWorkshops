@@ -1,0 +1,55 @@
+---
+title: "{{ title }}"
+author: "{{ author }}"
+date: "{{ date }}"
+output:
+  xaringan::moon_reader:
+    css: [default, rd.css, rd-font.css, "hygge"]
+    lib_dir: assets
+    seal: false
+    nature:
+      highlightStyle: dracula
+      countIncrementalSlides: false
+      beforeInit: "macros.js"
+---
+
+
+class: title-slide, middle
+
+
+# {{ title }} 
+
+.instructors[
+  .font180[**{{ author }}**]
+  <br><br>
+  {{ date }}
+]
+
+<br><br><br><br><br><br><br>
+
+<img src="img/logoW.png" width="160px"></img>
+
+
+
+```{r setup, include = FALSE}
+library(iseWorkshops)
+```
+
+---
+
+class: clear, middle
+
+## First
+
+
+---
+
+class: inverse, center, middle
+
+# Second
+
+![:custom_hr]()
+
+
+---
+# Third

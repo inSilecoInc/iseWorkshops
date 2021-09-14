@@ -49,8 +49,11 @@ rfa <- function(..., fill = "currentColor", help = FALSE) {
       "laptop-code", 
       "wikipedia-w")
     )
-    kkble(out[order(out$fun), ])
-    invisible(out[order(out$fun), ])
+    tmp <- out[order(out$fun), ]
+    rownames(tmp) <- NULL
+    msgInfo("icons available are")
+    print(kkble(tmp))
+    invisible(tmp)
   } else {
     icon_style(fontawesome(...), fill = fill)
   }
