@@ -11,6 +11,8 @@ rfa <- function(..., fill = "currentColor", help = FALSE) {
     out <- data.frame(
       fun = c(
         "gh()",
+        "gl()",
+        "gt()",
         "rp()",
         "ch()",
         "ck()",
@@ -31,6 +33,8 @@ rfa <- function(..., fill = "currentColor", help = FALSE) {
       ),
       icons = c(
       "github",
+      "gitlab",
+      "git",
       "r-project",
       "check",
       "clock",
@@ -63,6 +67,15 @@ rfa <- function(..., fill = "currentColor", help = FALSE) {
 #' @export
 #' @rdname rfa
 gh <- function() rfa("github")
+
+#' @export
+#' @rdname rfa
+gl <- function() rfa("gitlab")
+
+#' @export
+#' @rdname rfa
+gt <- function() rfa("git")
+
 
 #' @export
 #' @rdname rfa

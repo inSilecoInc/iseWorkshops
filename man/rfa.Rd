@@ -3,6 +3,8 @@
 \name{rfa}
 \alias{rfa}
 \alias{gh}
+\alias{gl}
+\alias{gt}
 \alias{rp}
 \alias{ch}
 \alias{ck}
@@ -25,6 +27,10 @@
 rfa(..., fill = "currentColor", help = FALSE)
 
 gh()
+
+gl()
+
+gt()
 
 rp()
 
