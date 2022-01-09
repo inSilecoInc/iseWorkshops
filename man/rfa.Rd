@@ -21,6 +21,7 @@
 \alias{cb}
 \alias{ey}
 \alias{lc}
+\alias{so}
 \alias{wk}
 \title{Shortcuts for fontawesome icons.}
 \usage{
@@ -63,6 +64,8 @@ cb()
 ey()
 
 lc()
+
+so()
 
 wk()
 }

@@ -29,6 +29,7 @@ rfa <- function(..., fill = "currentColor", help = FALSE) {
         "cb()",
         "ey()",
         "lc()",
+        "so()",
         "wk()"
       ),
       icons = c(
@@ -50,7 +51,8 @@ rfa <- function(..., fill = "currentColor", help = FALSE) {
       "exclamation-triangle",
       "clipboard",
       "eye",
-      "laptop-code", 
+      "laptop-code",
+      "stack-overflow",
       "wikipedia-w")
     )
     tmp <- out[order(out$fun), ]
@@ -140,6 +142,10 @@ ey <- function() rfa("eye")
 #' @export
 #' @rdname rfa
 lc <- function() rfa("laptop-code")
+
+#' @export
+#' @rdname rfa
+so <- function() rfa("stack-overflow")
 
 #' @export
 #' @rdname rfa
