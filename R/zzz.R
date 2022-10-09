@@ -1,8 +1,6 @@
 # Internals
 #' @importFrom curl curl_download
-#' @importFrom fs path path_package path_real file_exists dir_copy dir_delete file_copy file_move path_rel
 #' @importFrom glue glue
-#' @importFrom rmarkdown render
 #' @importFrom utils unzip browseURL
 #' @importFrom whisker whisker.render
 

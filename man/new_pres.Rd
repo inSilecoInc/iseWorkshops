@@ -21,7 +21,8 @@ new_pres(
 
 \item{pres_name}{name of the folder that includes the presentation.}
 
-\item{overwrite}{a logical. Overwrite files if they exist (see \code{\link[fs:copy]{fs::dir_copy()}}).}
+\item{overwrite}{a logical. Overwrite files if they exist
+(see \code{\link[fs:copy]{fs::dir_copy()}}).}
 }
 \description{
 Shortcuts for interactive functions.
