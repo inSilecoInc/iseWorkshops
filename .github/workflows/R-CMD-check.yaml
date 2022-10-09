@@ -28,27 +28,15 @@ jobs:
       CRAN: ${{ matrix.config.cran }}
 
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
 
-      - uses: r-lib/actions/setup-r@master
+      - uses: r-lib/actions/setup-r@v2
         with:
-          r-version: ${{ matrix.config.r }}
+          use-public-rspm: true
 
-      - uses: r-lib/actions/setup-pandoc@master
-
-      - name: Query dependencies
-        run: |
-          install.packages('remotes')
-          saveRDS(remotes::dev_package_deps(dependencies = TRUE), "depends.Rds", version = 2)
-        shell: Rscript {0}
-
-      - name: Cache R packages
-        if: runner.os != 'Windows'
-        uses: actions/cache@v1
+      - uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          path: ${{ env.R_LIBS_USER }}
-          key: ${{ runner.os }}-r-${{ matrix.config.r }}-${{ hashFiles('depends.Rds') }}
-          restore-keys: ${{ runner.os }}-r-${{ matrix.config.r }}-
+          extra-packages: rcmdcheck
 
       - name: Install system dependencies
         if: runner.os == 'Linux'
@@ -59,30 +47,4 @@ jobs:
           sysreqs=$(Rscript -e "cat(sysreqs::sysreq_commands('DESCRIPTION'))")
           sudo -s eval "$sysreqs"
 
-      - name: Install dependencies
-        run: |
-          library(remotes)
-          deps <- readRDS("depends.Rds")
-          deps[["installed"]] <- vapply(deps[["package"]], remotes:::local_sha, character(1))
-          update(deps)
-          remotes::install_cran("rcmdcheck")
-        shell: Rscript {0}
-
-      - name: Check
-        run: rcmdcheck::rcmdcheck(args = "--no-manual", error_on = "warning", check_dir = "check")
-        shell: Rscript {0}
-
-      - name: Upload check results
-        if: failure()
-        uses: actions/upload-artifact@master
-        with:
-          name: ${{ runner.os }}-r${{ matrix.config.r }}-results
-          path: check
-
-      # - name: Test coverage
-      #   if: matrix.config.os == 'macOS-latest' && matrix.config.r == 'release'
-      #   run: |
-      #     remotes::install_cran("covr")
-      #     covr::codecov(token = "${{secrets.CODECOV_TOKEN}}")
-      #   shell: Rscript {0}
-        
+      - uses: r-lib/actions/check-r-package@v2
