@@ -2,6 +2,6 @@
 #'
 #' @param ... further argument passed to [countdown::countdown()].
 #'
-#' @export 
+#' @export
 
 cdw <- function(...) countdown::countdown(...)

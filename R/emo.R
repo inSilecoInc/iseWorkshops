@@ -2,6 +2,6 @@
 #'
 #' @param ... further argument passed to [emo::ji()].
 #'
-#' @export 
+#' @export
 
 emj <- function(...) emo::ji(...)

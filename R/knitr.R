@@ -2,6 +2,6 @@
 #'
 #' @param ... further argument passed to [knitr::include_graphics()].
 #'
-#' @export 
+#' @export
 
 kig <- function(...) knitr::include_graphics(...)

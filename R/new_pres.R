@@ -20,12 +20,12 @@ new_pres <- function(title = "Cool title", date = Sys.Date(), author = "inSileco
     ), 
     "newpres/index.Rmd"
   )
-  msgInfo("folder 'newpres' created")
+  cli::cli_alert_info("folder 'newpres' created")
   #
-  msgInfo("Rendering presentation")
+  cli::cli_alert_info("Rendering presentation")
   render("newpres/index.Rmd")
   #
-  msgInfo("Rendering presentation and opening it")
+  cli::cli_alert_info("Rendering presentation and opening it")
   openHTML("newpres/index.html")
   
   invisible(NULL)

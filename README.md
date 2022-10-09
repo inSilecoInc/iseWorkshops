@@ -52,12 +52,6 @@ wksh_dl(1)
 new_pres()
 ```
 
-
-## TODO 
-
-- Allows the user to cherry pick what should be dl in `wksh_dl()`.
-- `update_template()`.
-
 ## Code of Conduct
 
 Please note that this project is released with a [Contributor Code of Conduct](https://docs.ropensci.org/rcites/CONDUCT.html).

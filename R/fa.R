@@ -2,9 +2,10 @@
 #'
 #' @param ... further argument passed to [icons::fontawesome()].
 #' @param fill color to fill the icon with see [icons::icon_style()].
-#' @param help if `TRUE` then a table with shortcut names (`fun`) and corresponding icons is displayed.
+#' @param help if `TRUE` then a table with shortcut names (`fun`) and
+#' corresponding icons is displayed.
 #'
-#' @export 
+#' @export
 
 rfa <- function(..., fill = "currentColor", help = FALSE) {
   if (help) {
@@ -33,35 +34,36 @@ rfa <- function(..., fill = "currentColor", help = FALSE) {
         "wk()"
       ),
       icons = c(
-      "github",
-      "gitlab",
-      "git",
-      "r-project",
-      "check",
-      "clock",
-      "database",
-      "info-circle",
-      "link",
-      "book",
-      "file",
-      "folder",
-      "file-pdf",
-      "arrow-right",
-      "cogs",
-      "exclamation-triangle",
-      "clipboard",
-      "eye",
-      "laptop-code",
-      "stack-overflow",
-      "wikipedia-w")
+        "github",
+        "gitlab",
+        "git",
+        "r-project",
+        "check",
+        "clock",
+        "database",
+        "info-circle",
+        "link",
+        "book",
+        "file",
+        "folder",
+        "file-pdf",
+        "arrow-right",
+        "cogs",
+        "exclamation-triangle",
+        "clipboard",
+        "eye",
+        "laptop-code",
+        "stack-overflow",
+        "wikipedia-w"
+      )
     )
     tmp <- out[order(out$fun), ]
     rownames(tmp) <- NULL
-    msgInfo("icons available are")
+    cli::cli_alert_info("icons available via shortcuts are:")
     print(kkble(tmp))
     invisible(tmp)
   } else {
-    icon_style(fontawesome(...), fill = fill)
+    fontawesome::fa((...), fill = fill)
   }
 }
 

@@ -9,7 +9,8 @@ wksh_dl(id, path = ".", verbose = TRUE)
 \arguments{
 \item{id}{a vector of identifiers.}
 
-\item{path}{path where the workshops files are or a path to a folder where the files will be extracted if download is set to \code{TRUE}.}
+\item{path}{path where the workshops files are or a path to a folder where
+the files will be extracted if download is set to \code{TRUE}.}
 
 \item{verbose}{a logical. Should extra information be reported on progress?}
 }
@@ -18,8 +19,9 @@ Download a selection of workshops.
 }
 \examples{
 \dontrun{
- wksh_dl(1)
- wksh_dl(c(1, 2))
- wksh_dl("a")
+wksh_dl(1)
+wksh_dl(c(1, 2))
+wksh_dl("a")
 }
+
 }

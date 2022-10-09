@@ -1,7 +1,7 @@
 Package: iseWorkshops
 Title: inSileco workshops miscellaneous functions 
 Version: 0.0.0.9000
-Date: 2021-01-09
+Date: 2022-10-09
 Authors@R: 
     person(given = "Kevin",
            family = "Cazelles",
@@ -18,25 +18,23 @@ Roxygen: list(markdown = TRUE)
 Imports: 
     cli,
     countdown,
-    crayon,
     curl,
     emo,
+    fontawesome,
     fs,
     glue,
-    icons,
     knitr,
-    kableExtra,
-    htmltools,
     rmarkdown,
     utils,
     whisker,
-    xaringan,
-    xaringanExtra,
 Remotes:
     gadenbuie/countdown,
     gadenbuie/xaringanExtra,
     hadley/emo,
-    mitchelloharawild/icons
+    htmltools,
+    kableExtra,
+    xaringan,
+    xaringanExtra
 Suggests:
     testthat
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.1

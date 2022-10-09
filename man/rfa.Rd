@@ -74,7 +74,8 @@ wk()
 
 \item{fill}{color to fill the icon with see \code{\link[icons:icon_style]{icons::icon_style()}}.}
 
-\item{help}{if \code{TRUE} then a table with shortcut names (\code{fun}) and corresponding icons is displayed.}
+\item{help}{if \code{TRUE} then a table with shortcut names (\code{fun}) and
+corresponding icons is displayed.}
 }
 \description{
 Shortcuts for fontawesome icons.
