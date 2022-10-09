@@ -1,6 +1,6 @@
 Package: iseWorkshops
 Title: inSileco workshops miscellaneous functions 
-Version: 0.0.0.9000
+Version: 0.1.0
 Date: 2022-10-09
 Authors@R: 
     person(given = "Kevin",

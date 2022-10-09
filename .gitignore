@@ -1,5 +1,6 @@
 # Project specific
 /newpres
+.vscode
 
 # History files
 .Rhistory

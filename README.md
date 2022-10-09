@@ -1,5 +1,6 @@
 # iseWorkshops
-[![R-CMD-check](https://github.com/inSilecoInc/iseWorkshops/workflows/R-CMD-check/badge.svg)](https://github.com/inSilecoInc/iseWorkshops/actions?query=workflow%3AR-CMD-check)
+[![R-CMD-check](https://github.com/inSilecoInc/iseWorkshops/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/inSilecoInc/iseWorkshops/actions/workflows/R-CMD-check.yaml)
+[![lint](https://github.com/inSilecoInc/iseWorkshops/actions/workflows/lint.yaml/badge.svg)](https://github.com/inSilecoInc/iseWorkshops/actions/workflows/lint.yaml)
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 
 
