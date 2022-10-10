@@ -5,22 +5,27 @@
 \alias{gh}
 \alias{gl}
 \alias{gt}
+\alias{py}
 \alias{rp}
+\alias{co}
+\alias{br}
+\alias{db}
+\alias{lc}
+\alias{ar}
+\alias{al}
 \alias{ch}
 \alias{ck}
-\alias{db}
 \alias{nf}
 \alias{lk}
 \alias{bk}
 \alias{fl}
 \alias{fd}
 \alias{pd}
-\alias{ar}
 \alias{cg}
-\alias{tr}
 \alias{cb}
 \alias{ey}
-\alias{lc}
+\alias{tr}
+\alias{rl}
 \alias{so}
 \alias{wk}
 \title{Shortcuts for fontawesome icons.}
@@ -33,13 +38,25 @@ gl()
 
 gt()
 
+py()
+
 rp()
+
+co()
+
+br()
+
+db()
+
+lc()
+
+ar()
+
+al()
 
 ch()
 
 ck()
-
-db()
 
 nf()
 
@@ -53,17 +70,15 @@ fd()
 
 pd()
 
-ar()
-
 cg()
-
-tr()
 
 cb()
 
 ey()
 
-lc()
+tr()
+
+rl()
 
 so()
 
@@ -79,4 +94,7 @@ corresponding icons is displayed.}
 }
 \description{
 Shortcuts for fontawesome icons.
+}
+\references{
+See https://fontawesome.com/search
 }

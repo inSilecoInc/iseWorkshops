@@ -5,6 +5,9 @@
 #' @param help if `TRUE` then a table with shortcut names (`fun`) and
 #' corresponding icons is displayed.
 #'
+#' @references
+#' See https://fontawesome.com/search
+#'
 #' @export
 
 rfa <- function(..., fill = "currentColor", help = FALSE) {
@@ -83,7 +86,41 @@ gt <- function() rfa("git")
 
 #' @export
 #' @rdname rfa
+py <- function() rfa("python")
+
+#' @export
+#' @rdname rfa
 rp <- function() rfa("r-project")
+
+
+#' @export
+#' @rdname rfa
+co <- function() rfa("code")
+
+#' @export
+#' @rdname rfa
+br <- function() rfa("code-branch")
+
+#' @export
+#' @rdname rfa
+db <- function() rfa("database")
+
+#' @export
+#' @rdname rfa
+lc <- function() rfa("laptop-code")
+
+
+#' @export
+#' @rdname rfa
+ar <- function() rfa("arrow-right")
+
+#' @export
+#' @rdname rfa
+al <- function() rfa("arrow-left")
+
+#' @export
+#' @rdname rfa
+bk <- function() rfa("book")
 
 #' @export
 #' @rdname rfa
@@ -95,19 +132,11 @@ ck <- function() rfa("clock")
 
 #' @export
 #' @rdname rfa
-db <- function() rfa("database")
-
-#' @export
-#' @rdname rfa
-nf <- function() rfa("info-circle")
+nf <- function() rfa("info")
 
 #' @export
 #' @rdname rfa
 lk <- function() rfa("link")
-
-#' @export
-#' @rdname rfa
-bk <- function() rfa("book")
 
 #' @export
 #' @rdname rfa
@@ -123,15 +152,7 @@ pd <- function() rfa("file-pdf")
 
 #' @export
 #' @rdname rfa
-ar <- function() rfa("arrow-right")
-
-#' @export
-#' @rdname rfa
-cg <- function() rfa("cogs")
-
-#' @export
-#' @rdname rfa
-tr <- function() rfa("exclamation-triangle")
+cg <- function() rfa("gears")
 
 #' @export
 #' @rdname rfa
@@ -143,7 +164,12 @@ ey <- function() rfa("eye")
 
 #' @export
 #' @rdname rfa
-lc <- function() rfa("laptop-code")
+tr <- function() rfa("triangle-exclamation")
+
+#' @export
+#' @rdname rfa
+rl <- function() rfa("rocket-launch")
+
 
 #' @export
 #' @rdname rfa
