@@ -13,11 +13,11 @@
 \alias{lc}
 \alias{ar}
 \alias{al}
+\alias{bk}
 \alias{ch}
 \alias{ck}
 \alias{nf}
 \alias{lk}
-\alias{bk}
 \alias{fl}
 \alias{fd}
 \alias{pd}
@@ -54,6 +54,8 @@ ar()
 
 al()
 
+bk()
+
 ch()
 
 ck()
@@ -61,8 +63,6 @@ ck()
 nf()
 
 lk()
-
-bk()
 
 fl()
 
@@ -85,9 +85,9 @@ so()
 wk()
 }
 \arguments{
-\item{...}{further argument passed to \code{\link[icons:fontawesome]{icons::fontawesome()}}.}
+\item{...}{further argument passed to \code{\link[fontawesome:fa]{fontawesome::fa()}}.}
 
-\item{fill}{color to fill the icon with see \code{\link[icons:icon_style]{icons::icon_style()}}.}
+\item{fill}{color to fill the icon with see \code{\link[fontawesome:fa]{fontawesome::fa()}}.}
 
 \item{help}{if \code{TRUE} then a table with shortcut names (\code{fun}) and
 corresponding icons is displayed.}

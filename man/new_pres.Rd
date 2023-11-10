@@ -5,11 +5,12 @@
 \title{Shortcuts for interactive functions.}
 \usage{
 new_pres(
-  title = "Cool title",
+  title = "Your title",
   date = Sys.Date(),
-  author = "inSileco Tea",
+  author = "inSileco Team",
   pres_name = "newpres",
-  overwrite = FALSE
+  overwrite = FALSE,
+  output_dir = NULL
 )
 }
 \arguments{
@@ -21,7 +22,10 @@ new_pres(
 
 \item{pres_name}{name of the folder that includes the presentation.}
 
-\item{overwrite}{a logical. Overwrite files if they exist
+\item{overwrite}{a logical. Overwrite files if they exist,}
+
+\item{output_dir}{output directory, by default a folder "pres_{date stamp}" i
+s created.
 (see \code{\link[fs:copy]{fs::dir_copy()}}).}
 }
 \description{

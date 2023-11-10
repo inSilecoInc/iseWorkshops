@@ -1,7 +1,7 @@
 #' Shortcuts for fontawesome icons.
 #'
-#' @param ... further argument passed to [icons::fontawesome()].
-#' @param fill color to fill the icon with see [icons::icon_style()].
+#' @param ... further argument passed to [fontawesome::fa()].
+#' @param fill color to fill the icon with see [fontawesome::fa()].
 #' @param help if `TRUE` then a table with shortcut names (`fun`) and
 #' corresponding icons is displayed.
 #'
@@ -169,7 +169,6 @@ tr <- function() rfa("triangle-exclamation")
 #' @export
 #' @rdname rfa
 rl <- function() rfa("rocket-launch")
-
 
 #' @export
 #' @rdname rfa

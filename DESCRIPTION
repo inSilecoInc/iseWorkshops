@@ -1,7 +1,7 @@
 Package: iseWorkshops
 Title: inSileco workshops miscellaneous functions 
-Version: 0.1.0.9000
-Date: 2022-11-09
+Version: 0.1.0.9001
+Date: 2023-11-09
 Authors@R: 
     person(given = "Kevin",
            family = "Cazelles",
@@ -37,4 +37,4 @@ Remotes:
     xaringanExtra
 Suggests:
     testthat
-RoxygenNote: 7.2.1
+RoxygenNote: 7.2.3

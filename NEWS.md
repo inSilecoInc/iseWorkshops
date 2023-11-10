@@ -2,6 +2,7 @@
 
 * Fix icon names.
 * Add icon shortcuts.
+* Improve creation of new presentation.
 
 # iseWorkshops v0.1.0 (initial release)
 
