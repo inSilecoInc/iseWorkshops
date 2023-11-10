@@ -1,4 +1,4 @@
-# iseWorkshops devel
+# iseWorkshops v0.2.0
 
 * Fix icon names.
 * Add icon shortcuts.
